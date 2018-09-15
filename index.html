@@ -8,6 +8,7 @@
 
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css"/>
 
     <!-- #2 #css #elements -->
     <style>
@@ -19,52 +20,8 @@
           * Accent color: #CDDC39 (LIME)
           * Accent color_text: black
           */
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: blue;
-            color: white;
-        }
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-        /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-            text-transform: uppercase;
-        }
-        strong
-        {
-                    text-transform:none;
-        }
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-            text-transform: none;
-        }
+       
+        
     </style>
 
 </head>
@@ -80,20 +37,25 @@
 <!-- #1 #channels #topics -->
 <div>
     <ul>
-            <li><a href="https://what3words.com/displaying-3-word-address/" target="_blank">#Yummy </a> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="The image is missing" ></li>
-            <li><a href="https://what3words.com/displaying-3-word-address/" target="_blank">#SevenContinents</a> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="The image is missing" ></li>
-            <li><a href="https://what3words.com/displaying-3-word-address/" target="_blank">#KillerApp</a> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="The image is missing" ></li>
-            <li><a href="https://what3words.com/displaying-3-word-address/" target="_blank">#FirstPersonOnMars</a> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="The image is missing" ></li>
-            <li><a href="https://what3words.com/displaying-3-word-address/" target="_blank">#OctoberFest</a> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="The image is missing" ></li>
+            <li class="list">#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="The image is missing" ></li>
+            <hr style="color: lightgrey">
+            <li class="list select">#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="The image is missing" ></li>
+            <hr style="color: lightgrey">
+            <li class="list">#KillerApp<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="The image is missing" ></li>
+            <hr style="color: lightgrey">
+            <li class="list">#FirstPersonOnMars<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="The image is missing" ></li>
+            <hr style="color: lightgrey">
+            <li class="list">#OctoberFest<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="The image is missing" ></li>
+            <hr style="color: lightgrey">
     </ul>
     
 </div>
 
 <!-- #1 #channels #buttons -->
-<div style="background-color:white">
-    <button style="background-color:white"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="The image is missing" >New</button>
-    <button style="background-color:white"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="The image is missing" >Trending</button> 
-    <button style="background-color:white"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="The image is missing" >Favorites</button>
+<div id="tab-bar" >
+    <button class="tab new" ><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="The image is missing" >New</button>
+    <button class="tab"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="The image is missing" >Trending</button> 
+    <button class="tab"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="The image is missing" >Favorites</button>
 </div>
 
 <!-- chat area -->
@@ -107,28 +69,28 @@
 </h1>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<div style="width: 80%"><h3>cheeses.yard.applies <strong>Wed, June 20th, 13:37</strong> <em>15 min. left</em></h3>     
+    <div class="message own" ><h3><a href="https://what3words.com/displaying-3-word-address/" target="_blank">cheeses.yard.applies </a><strong>Wed, June 20th, 13:37</strong> <em>15 min. left</em></h3>     
     <p>What's the place you folks call home?</p>
     <button>+5 min.</button>
 </div>
-<div style="width: 80%"><h3>truck.cotton.zone <strong>Wed, June 20th, 13:39</strong> <em>4 min. left</em></h3>
+    <div  class="message"><h3><a href="https://what3words.com/displaying-3-word-address/" target="_blank">truck.cotton.zone</a> <strong>Wed, June 20th, 13:39</strong> <em>4 min. left</em></h3>
     <p>BRISBANE! Hang loose!</p>
     <button>+5 min.</button>
 </div>
-<div style="width: 80%"><h3>thus.best.dishes <strong>Wed, June 20th, 14:02</strong><em> 12 min. left</em></h3>
+    <div class="message" ><h3><a href="https://what3words.com/displaying-3-word-address/" target="_blank">thus.best.dishes </a><strong>Wed, June 20th, 14:02</strong><em> 12 min. left</em></h3>
     <p>The big apple.</p>
     <button>+5 min.</button>
 </div>
-<div style="width: 80%"><h3>driveway.helper.magazine <strong>Wed, June 20th, 14:02</strong> <em>7 min. left</em></h3>
+    <div class="message" ><h3><a href="https://what3words.com/displaying-3-word-address/" target="_blank">driveway.helper.magazine </a><strong>Wed, June 20th, 14:02</strong> <em>7 min. left</em></h3>
     <p>Eu sou um Carocas.</p>
     <button>+5 min.</button>
 </div>
-<div style="width: 80%"><h3>escapes.pitch.saucepan <strong>Wed, June 20th, 14:07</strong> <em>14 min. left</em></h3>
+    <div class="message"><h3><a href="https://what3words.com/displaying-3-word-address/" target="_blank">escapes.pitch.saucepan </a><strong>Wed, June 20th, 14:07</strong> <em>14 min. left</em></h3>
     <p>Greetings from the western cape!</p>
     <button>+5 min.</button>
 </div>
-<div style="width: 80%"><h3>meanings.identity.pays <strong>Wed, June 20th, 04:08</strong> <em>15 min. left</em></h3>
-    <p>IL},{</p>
+    <div class="message"><h3><a href="https://what3words.com/displaying-3-word-address/" target="_blank">meanings.identity.pays </a><strong>Wed, June 20th, 04:08</strong> <em>15 min. left</em></h3>
+    <p>"|"|</p>
     <button>+5 min.</button>  
 </div>
  

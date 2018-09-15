@@ -1,0 +1,125 @@
+ /*global styles */
+        * {
+            /* #2 #font #faces #remove ugly spaces */
+            font-family: 'Arial', sans-serif;
+            padding:0;
+            margin:0;
+        }
+        body {
+            /* #2 #colorful #background */
+            background-color: lightgray;
+        }
+        button, h3{
+                    text-transform: uppercase;
+                    }
+
+/*styles for app bar*/
+h1 {
+            /* #2 #colourful #app-bar */
+            background-color: blue;
+            color: white;
+        }
+
+/*styles for channel area*/
+h2
+{
+            /* #2 #colorful #channelandchat */
+    background-color: white;
+}
+ul
+{
+    background-color: white;
+}
+
+.list
+{
+    padding: 16px;
+    font-size: 16px;
+    
+}
+.list img
+{
+    vertical-align: middle;
+}
+.list.select
+{
+    border-left: 4px solid blue;
+    color:blue;
+}
+/*styles for chat area*/
+        p {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+        }
+        h3 {
+            /* #2 #font #metadata is now medium */
+            font-size: medium;
+            text-transform: uppercase;
+        }
+        strong
+        {
+                    text-transform:none;
+        }
+
+/*styles for tab bar*/
+
+#tab-bar
+{
+    background-color: white;
+}
+.tab{
+              background-color:white;
+              border: none;
+              font-size: 13px;
+              width: 33%;
+              height: 72px;
+              padding: 16px;
+            }
+.tab img
+{
+    display:block;
+    margin: auto;
+}
+.tab.new
+{
+    border-bottom: 4px solid blue;
+    color: blue;
+}
+/*messages*/
+.message
+{
+    width:80%;
+    margin-bottom:8px;
+    
+}
+.message p
+{
+    padding:16px;
+    background-color: white;
+}
+.message button
+{
+    background-color:#CDDC39;
+    color:black;
+    text-transform: uppercase;
+}
+.message em
+{
+    font-size: larger;
+    font-style: normal;
+    text-transform: none;
+}
+.message a
+{
+    color: black;
+}
+
+.message
+{
+    margin-left: 2.5%;
+    margin-bottom: 8px;
+}
+.message.own 
+{
+    margin-left: 17.5%;
+}
